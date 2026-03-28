@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 20px;">
+
+    <div style="background-color: white; max-width: 600px; margin: auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+
+        <!-- Title -->
+        <h1 style="text-align: center;">
+            <b><u style="color: red;">GOOGLE FORM</u></b>
+        </h1>
+        <h5 style="text-align: center; color: gray;">For Hostel and Mess Fee</h5>
+
+        <hr style="border: 1px solid red;">
+
+        <form action="/action.php" method="post">
+
+            <!-- Username & Password -->
+            <h3 style="color: #333;">Login Details</h3>
+
+            <input type="text" placeholder="USERNAME...." style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;">
+            <br>
+            <input type="password" placeholder="PASSWORD...." style="width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;">
+            <br><br>
+
+            <hr>
+
+            <!-- B.Tech Branch -->
+            <h3 style="color: red;"><b>B.Tech Branch</b></h3>
+
+            <label style="display: block; margin-bottom: 8px;">
+                <input type="radio" value="cs" name="branch" id="id1">
+                &nbsp;Computer Science
+            </label>
+
+            <label style="display: block; margin-bottom: 8px;">
+                <input type="radio" value="it" name="branch" id="id2">
+                &nbsp;Information Technology
+            </label>
+
+            <label style="display: block; margin-bottom: 8px;">
+                <input type="radio" value="ec" name="branch" id="id3">
+                &nbsp;Electronics
+            </label>
+
+            <hr style="border: 1px solid #ccc;">
+
+            <!-- Fee Details -->
+            <h3><i><u>Fee Details</u></i></h3>
+
+            <label style="display: block; margin-bottom: 8px;">
+                <input type="checkbox" value="mess_fee" name="fee" id="mess">
+                &nbsp;Mess Fee
+            </label>
+
+            <label style="display: block; margin-bottom: 8px;">
+                <input type="checkbox" value="hostel_fee" name="fee" id="hostel">
+                &nbsp;Hostel Fee
+            </label>
+
+            <hr style="border: 1px solid #ccc;">
+
+            <!-- Select City -->
+            <h3><i><u>Select City</u></i></h3>
+
+            <select name="city" id="city" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 20px;">
+                <option value="">-- Select your city --</option>
+                <option value="Gorakhpur">Gorakhpur</option>
+                <option value="Noida">Noida</option>
+                <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Omparan">Omparan</option>
+                <option value="Mahadev Mandir">Mahadev Mandir</option>
+                <option value="UP">UP</option>
+                <option value="Basti">Basti</option>
+            </select>
+
+            <hr>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+                <input type="submit" value="SUBMIT" style="background-color: red; color: white; padding: 10px 30px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">
+                &nbsp;
+                <input type="reset" value="CLEAR" style="background-color: gray; color: white; padding: 10px 30px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
